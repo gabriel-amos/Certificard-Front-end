@@ -1,0 +1,119 @@
+/* Tipos de seletores: tag (div, h1, etc.), classe (criada pelo usuário), id (é único criado para uma parte específica do html) 
+Começar estilizando pelos grupos maiores/mais externos, e depois entrar nos detalhes*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"); /* pego do google fonts em @import, selecionar os Weights. Se fosse para o html, pegaria em <link>. Sempre inserir no começo do código */
+
+body {
+  background: linear-gradient(
+    236.85deg,
+    #c0c0c0 27.26%,
+    #3468a7 96.03%
+  ); /* cor de fundo do body, informação pega do Figma (aba Inspect) */
+  font-family: "Roboto", sans-serif; /* Fonte conforme o Figma, ou pego do google fonts */
+}
+
+.container {
+  /* estilizando uma classe, sempre começa com "." */
+  background: #ecf4ff;
+  color: #1c1c1c; /* referente aos textos*/
+  margin: 64px; /*margem em relação ao elemento exterior*/
+  padding: 45px; /*margem em relação ao elemento interno*/
+  border-radius: 20px; /*raio da borda circular*/
+  box-shadow: 6px 6px 6px #0e1d2f; /*sombra sob o elemento*/
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+}
+
+.perfil {
+  /*posicionar os elementos dentro do header, div=cabeçalho, e classe=perfil*/
+  display: flex; /*usando o flexbox para posicionar dinamicamente os elementos filhos de uma tag pai*/
+}
+
+.avatar {
+  border-radius: 460px;
+  max-height: 160px; /*como a figura está circular, poderia ser definido o max-width */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); /*O Figma colocou a sombra como filtro*/
+}
+
+.titulo {
+  margin-left: 16px; /*   margem à esquerda */
+}
+
+.titulo h1 {
+  /*estilizar a tag h1 dentro da classe "titulo"*/
+  font-weight: 700; /*bold*/
+  font-size: 36px;
+}
+
+.titulo h3 {
+  /*estilizar a tag h1 dentro da classe "titulo"*/
+  font-weight: 400; /*normal*/
+  font-size: 24px;
+}
+
+.tema button {
+  /*button da classe "tema"*/
+  align-self: self-end;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 8px 16px; /*padding vertical e horizontal*/
+  background: #ecf4ff;
+  border-radius: 100px;
+}
+
+.projetos {
+  /*o elemento pai é a lista*/
+  display: flex;
+  flex-direction: column;
+  /*  align-items: center; /* centralizar todos os itens do "projetos" no centro */
+  background: linear-gradient(230.65deg, #499cfe 27.49%, #9cc8fc 83.19%);
+  margin-top: 32px;
+  padding: 32px; /*margem interna para os 4 cantos*/
+  box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+  border-radius: 20px;
+}
+
+.projetos-titulo {
+  list-style: none; /*tirar o estilo padrão de lista do html*/
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.projetos-item {
+  list-style-type: none; /*retirar o "ponto"*/
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px; /*distância entre as linhas*/
+}
+
+.projetos-item a {
+  /*estilizar toda tag "a" dentro da class projetos-item*/
+  color: #1c1c1c;
+  text-decoration: none;
+}
+
+/* Estilizando a classe dark do body */
+.dark {
+  /*alterando a classe dark do body*/
+  background: linear-gradient(236.85deg, #375b86 27.26%, #6b87a9 96.03%);
+}
+
+.dark .container {
+  /*alterando os elementos containers da classe dark*/
+  background: #333439;
+  color: #f6f6f6;
+}
+
+.dark .projetos {
+  /*alterando os elementos containers da classe dark*/
+  color: #1c1c1c;
+}
+
+.dark .tema button {
+  background: #1c1c1c;
+  color: #ffffff;
+  border: 2px solid #f7f7f7;
+}

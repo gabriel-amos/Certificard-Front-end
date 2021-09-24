@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Aula 10 - Certificard</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- O Codepen não precisa indicar o link do CSS e JavaScript, pois já estão linkados -->
+
+<body>
+  <div class="container">
+    <!--fundo branco dentro do body, que englobe o header e o body-->
+    <header class="cabecalho">
+      <div class="perfil">
+        <img class="avatar" src="https://github.com/gabriel-amos.png" />
+        <div class="titulo">
+          <!-- divisão de texto -->
+          <h1>Gabriel Amós Alves Cruz Lima</h1>
+          <h3>Engenheiro Civil, estudante de programação</h3>
+          <!-- h1 e h3 são tipos de títulos      -->
+        </div>
+      </div>
+      <div class="tema">
+        <button onclick="mudaTema()"> Alterar Tema </button>
+      </div>
+
+    </header>
+
+    <main class="projetos">
+      <ul class="projetos-titulo">Projetos<ul>
+          <!--ul: lista não ordenada. ol: lista ordenada, como passos de uma receita-->
+          <!--           <li class="projetos-item"><a href="https://codepen.io/Gabriel_Amos/pen/MWoEVpz">👛Conversor de moedas</a></li>
+ -->
+          <!--           <li class="projetos-item"><a href="https://codepen.io/Gabriel_Amos/pen/BaZYZMQ">🎬Aluraflix</a></li> -->
+          <li class="projetos-item">
+            <p>👛Conversor de moedas</p>
+            <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="MWoEVpz" data-user="Gabriel_Amos" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+              <span>See the Pen <a href="https://codepen.io/Gabriel_Amos/pen/MWoEVpz">
+                  Conversor de moedas - ID3</a> by Gabriel Amós Alves Cruz Lima (<a href="https://codepen.io/Gabriel_Amos">@Gabriel_Amos</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+          </li>
+          <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+          <!--<a>: tag âncora-->
+          <!--botão windows + . = emoji, ou pesquisar na internet (ex.: emojipedia) e copiar e colar-->
+          <li class="projetos-item">
+            <p>🎬Aluraflix</p>
+            <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="vYZpJQW" data-user="Gabriel_Amos" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+              <span>See the Pen <a href="https://codepen.io/Gabriel_Amos/pen/vYZpJQW">
+                  AluraFlix v1- ID3</a> by Gabriel Amós Alves Cruz Lima (<a href="https://codepen.io/Gabriel_Amos">@Gabriel_Amos</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+          </li>
+    </main>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
